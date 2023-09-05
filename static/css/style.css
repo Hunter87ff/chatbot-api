@@ -77,7 +77,15 @@ body{
     margin: 5px;
     margin-left: auto;
 }
-
+/* move the typ to the bottom left corner of .chat */
+#typ{
+    color: #fff;
+    margin-left: 5px;
+    position: fixed;
+    margin-bottom: 3px;
+    font-size: 14px;
+    display: none;
+}
 .footer{
     background: var(--theme-color);
     color: white;
@@ -99,7 +107,7 @@ body{
     padding-left: 5px;
     resize: none;
     overflow: visible;
-    min-height: 30px;
+    min-height: 40px;
 }
 .footer button{
     border: none;;

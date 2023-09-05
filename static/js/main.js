@@ -21,6 +21,8 @@ sel("#message").addEventListener('keyup', function(event){
         send.click();
     }
 });
+let typ = sel("#typ");
+typ.style.bottom = footer.offsetHeight + 'px';
 main.style.marginTop = header.offsetHeight + 'px';
 main.style.marginBottom= footer.offsetHeight + 'px';
 function aclass(element, class_name){
@@ -44,6 +46,7 @@ send.addEventListener('click', async function(){
     aclass(message_element, 'h-chat');
     message_element.innerHTML = message;
     ach(chat, message_element);
+    typ.style.display = 'block';
     sel("#message").value = '';
     //console.log(message);
     //request that message to an api and get a response api url= https://dashboard.87-hunter.repl.co/api/ask?q=message
@@ -56,6 +59,7 @@ send.addEventListener('click', async function(){
         message_element.innerHTML = data.a;
         setTimeout(function() {
             // Code to be executed after the delay
+            typ.style.display = 'none';
             ach(chat, message_element);
             let blm = document.querySelectorAll(".h-chat");
             let bbm = elm[elm.length - 1];
@@ -67,5 +71,6 @@ send.addEventListener('click', async function(){
         let llm = elm[elm.length - 1];
         llm.scrollIntoView();
         sent_n.play();
+        
 }
 );
