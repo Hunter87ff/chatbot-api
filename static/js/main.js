@@ -12,6 +12,8 @@ let footer = sel('.footer');
 let body = sel('body');
 let chat = sel('.chat');
 let send = sel("#send");
+let sent_n = sel("#sent");
+let received_n = sel("#received");
 //click send when clicking enter
 sel("#message").addEventListener('keyup', function(event){
     if(event.keyCode === 13){
@@ -58,10 +60,12 @@ send.addEventListener('click', async function(){
             let blm = document.querySelectorAll(".h-chat");
             let bbm = elm[elm.length - 1];
             bbm.scrollIntoView();
+            received_n.play();
           }, 2000);
     })
         let elm = document.querySelectorAll(".b-chat");
         let llm = elm[elm.length - 1];
         llm.scrollIntoView();
+        sent_n.play();
 }
 );
