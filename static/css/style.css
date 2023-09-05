@@ -1,0 +1,132 @@
+
+:root{
+    --theme-color: #26293f;
+    --main-theme: #3f3f3f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Bree Serif";
+}
+body{
+    max-width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.header{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background: var(--theme-color);
+    color: White;
+    position: fixed;
+    margin: 0px;
+    width: 100%;
+    top: 0%;
+}
+.header img{
+    height: 50px;
+    width: 50px;
+    border-radius: 6pc;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.header h2{
+    cursor: pointer;
+}
+
+
+.main{
+    margin: 0px;
+    background-color: var(--main-theme);
+    height: 100%;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    min-height: 80vh;
+}
+.main .chat{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    padding-left:5px;
+}
+.b-chat{
+    display: flex;
+    border-radius: 6pc;
+    border: 1px solid white;
+    padding: 5px;
+    width: fit-content;
+    margin: 5px;
+    margin-right: auto;
+    color: white;
+    overflow: visible;
+}
+.h-chat{
+    display: flex;
+    border-radius: 6pc;
+    border: 1px solid var(--theme-color);
+    background: linear-gradient(to right, #35d8e4, #346eeb);
+    color: #fff;
+    padding: 5px;
+    width: fit-content;
+    margin: 5px;
+    margin-left: auto;
+}
+
+.footer{
+    background: var(--theme-color);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer textarea, input{
+    border-radius: 6pc;
+    border: none;
+    width: 80vw;
+    margin-right: auto;
+    color: #000;
+    padding-left: 5px;
+    resize: none;
+    overflow: visible;
+    min-height: 30px;
+}
+.footer button{
+    border: none;;
+    color: #568ff8;
+    background: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right:25px;
+    width:20vw;
+}
+.footer button:hover{
+    color: #fff;
+}
+.footer button:focus{
+    outline: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #20b2d6;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
