@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- This is a chat interface -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spruce AI</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&&family=PT+Sans+Narrow&family=Hind+Madurai&family=Pacifico&family=Bree+Serif&family=Bebas+Neue&display=swap">
+ 
+</head>
+<body>
+ <div class="header">
+    <!-- <img src="static/img/logo.png" alt=""> <h2>SPRUCE</h2> -->
+    <!-- <i class="fa-solid fa-bars-staggered menu-bar"></i> -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="menu-bar"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 8C3 7.44772 3.44772 7 4 7H20C20.5523 7 21 7.44772 21 8C21 8.55228 20.5523 9 20 9H4C3.44772 9 3 8.55228 3 8ZM3 16C3 15.4477 3.44772 15 4 15H14C14.5523 15 15 15.4477 15 16C15 16.5523 14.5523 17 14 17H4C3.44772 17 3 16.5523 3 16Z" fill="currentColor"></path></svg>
+    <h3>Spruce Bot</h3>
+    <!-- <i class="fa-solid fa-plus new-chat"></i> -->
+    <svg class="new-chat" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="icon-lg" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+ </div>
+ <div class="main">
+    <div class="chat">
+        <p class="b-chat">hello 😊</p>
+        <p class="h-chat">hello 😊</p>
+    </div>
+    <p id="typ">Typing...</p>
+ </div>
+ <div class="footer">
+   <div class="inp-area">
+      <input name="query" type="text" placeholder="Send a message" id="message">
+      <!-- <button id="send"><i class="fas fa-paper-plane"></i></button> -->
+     <button id="send"><svg xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 16 16" fill="none" class="icon-sm m-1 md:m-0"><path d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z" fill="currentColor"></path></svg>
+     </button>
+   </div>
+
+ </div>
+<audio src="static/audio/sent.mp3" id="sent"></audio>
+<audio src="static/audio/received.mp3" id="received"></audio>
+<script src="static/js/main.js"></script>
+</body>
+</html>
