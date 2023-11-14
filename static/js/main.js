@@ -48,8 +48,6 @@ send.addEventListener('click', async function(){
     ach(chat, message_element);
     typ.style.display = 'block';
     sel("#message").value = '';
-    //console.log(message);
-    //request that message to an api and get a response api url= https://dashboard.87-hunter.repl.co/api/query?q=message
     fetch(`https://dashboard.87-hunter.repl.co/api/query?q=${message}`)
     .then(response => response.json())
     .then(data => {
